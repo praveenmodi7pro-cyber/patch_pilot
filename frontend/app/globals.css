@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090D16;
+  --secondary: #101827;
+  --card: #141E2E;
+  --border: #1E293B;
+  --primary: #6366F1;
+  --cyan: #06B6D4;
+}
+
+body {
+  color: #F8FAFC;
+  background-color: #090D16;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Monaco container styling */
+.monaco-editor {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.diff-line-added {
+  background-color: rgba(34, 197, 94, 0.15) !important;
+}
+
+.diff-line-removed {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+}
+
